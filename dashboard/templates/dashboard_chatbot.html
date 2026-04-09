@@ -1,0 +1,13 @@
+
+
+<h1>Chat with AI</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="user_input" class="form-label">Your Message:</label>
+        <input type="text" class="form-control" id="user_input" name="user_input" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+    <br><br>
+</form>
