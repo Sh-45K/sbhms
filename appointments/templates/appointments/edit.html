@@ -22,17 +22,12 @@
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title mb-4">Chat with AI</h2>
-                        <form method="POST">
-    {% csrf_token %}
-    <div class="mb-3">
-        <label for="user_input" class="form-label">Your Message:</label>
-        <input type="text" class="form-control" id="user_input" name="user_input" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Send</button>
-    <br><br>
-</form>
-
+                        <h2 class="card-title mb-4">Edit Appointment</h2>
+                        <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Update</button>
+                       </form>
                     </div>
                 </div>
             </div>
